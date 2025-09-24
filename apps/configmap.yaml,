@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: my-app-config
+  namespace: argocd # Use the same namespace as your application.
+data:
+  database.host: "bitnami-postgresql"
+  database.port: "5432"
+  app.logging.level: "info"
+  app.feature.enabled: "true"
