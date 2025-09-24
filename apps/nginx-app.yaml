@@ -12,7 +12,7 @@ spec:
     namespace: argocd
   syncPolicy:
     automated:
-      selfHeal: true
+      selfHeal: false
   source:
     repoURL: https://github.com/dekemre/testemre.git
     path: nginx
